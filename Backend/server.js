@@ -21,7 +21,7 @@ app.post('/chat',async(req,res)=>{
     const llmResult = await generate(message);//result from   llm.js
     res.json({ message: llmResult });
 })
-
-app.listen(3080,()=>{
-    console.log("Server is running on port 3080");
+const PORT = process.env.PORT;
+app.listen(PORT,()=>{
+    console.log(`Server is running on port:${PORT}`);
 })
