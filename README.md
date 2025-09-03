@@ -1,4 +1,4 @@
 for backend
 npm i
 for starting server
-node server.
+node server.js
